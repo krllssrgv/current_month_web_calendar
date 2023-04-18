@@ -1,0 +1,32 @@
+*
+	margin: 0
+	padding: 0
+.calendar
+	display: grid
+	grid-template: 30px repeat(4, 35px) / repeat(7, 35px)
+	grid-auto-rows: 35px
+	gap: 12px 12px
+	&__days
+		text-align: center
+		line-height: 30px
+		color: black
+		background-color: white
+		font-size: 20px
+	&__day
+		box-sizing: border-box
+		color: black
+		border-radius: 50%
+		font-size: 18px
+		text-align: center
+		line-height: 31px
+		border: 2px solid black
+		transition: .4s all
+		&:hover
+			cursor: pointer
+			background-color: black
+			color: white
+		&-today
+			border-color: orange
+		&-active
+			background-color: black
+			color: white
